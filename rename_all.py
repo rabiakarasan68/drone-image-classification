@@ -17,10 +17,8 @@ for class_name in os.listdir(base_dir):
 
         old_path = os.path.join(class_path, filename)
 
-        # uzantıyı al
         ext = os.path.splitext(filename)[1].lower()
 
-        # sadece resim dosyaları
         if ext not in [".jpg", ".jpeg", ".png"]:
             continue
 
